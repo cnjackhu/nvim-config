@@ -3,3 +3,7 @@
 -- Add any additional keymaps here
 vim.keymap.set({ "n", "v", "o" }, "H", "^", { desc = "Go to start of line" })
 vim.keymap.set({ "n", "v", "o" }, "L", "$", { desc = "Go to end of line" })
+-- 彻底删除 <leader>L 的 LazyVim Changelog 快捷键
+vim.keymap.del("n", "<leader>L")
+-- 彻底删除 Buffer Keymaps
+vim.keymap.del("n", "<leader>?")
